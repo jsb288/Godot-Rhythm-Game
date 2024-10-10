@@ -137,7 +137,7 @@ var track0 = [
 	[0.5, 3],
 	[0.5, 4],
 ]
-@onready var sheet_music = track0
+@onready var sheet_music = track5
 	#change this to change which track is played
 @onready var time_offset = Time.get_ticks_msec() - (sheet_music[0][0] * 1000.0)
 
