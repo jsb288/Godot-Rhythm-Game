@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://brc1pqoo0p3dk"]
+
+[ext_resource type="Script" path="res://note.gd" id="1_dfbj7"]
+[ext_resource type="Texture2D" uid="uid://btyefey5asdih" path="res://icon.svg" id="2_g88lm"]
+[ext_resource type="AudioStream" uid="uid://c32ea6vvl1mn4" path="res://coin.ogg" id="3_nnuge"]
+[ext_resource type="AudioStream" uid="uid://dfe75jlof6hbh" path="res://dice.mp3" id="4_xqgld"]
+
+[node name="Note" type="Node2D"]
+script = ExtResource("1_dfbj7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_g88lm")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_nnuge")
+pitch_scale = 0.65
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_xqgld")
